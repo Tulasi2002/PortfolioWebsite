@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TULASI KONDAPALLI/Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/1b4670d24f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- -------------HOME-------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <i class="fa-solid fa-house logo"></i>
+                <!-- <img src="" class="logo">       Add logo image url -->
+                 <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#profiles">Profiles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hello I'm <span>TULASI KONDAPALLI</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------ABOUT------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://res.cloudinary.com/dpxhbhtjc/image/upload/v1748254143/picture_ktvyda.jpg">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a skilled frontend developer proficient in HTML, CSS,JavaScript and React.js, With a strong foundation in Python, I create dynamic and user-friendly web applications. My experience includes developing responsive interfaces and implementing projects that enhance user experience and performance optimization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<!--                        <p class="tab-links" onclick="opentab('internships')">Internships</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Developing webpages using HTML, CSS, JavaScript & React.js </li>
+                            <li><span>Python Programing</span><br>Analyzing & solving problems in various coding platforms</li>
+                            <li><span>Database Management System</span><br>Developed SQL queries to extract, manipulate, and analyze large datasets</li>
+                        </ul>
+                    </div>
+<!--                  <div class="tab-contents" id="internships">
+                        <ul>
+                            <p><span> Python</span><br>Built foundational python skills by implementing various libraries in Jupyter Notebook</p>
+                            <p><span>Data Preprocessing</span><br>Collaborated on data cleaning and feature engineering to prepare datasets for model training</p>
+                            <p><span>Projects</span><br>Developed projects like Fashion Recommendation System, Student Performance Prediction, and Iris Prediction</p>
+                        </ul>
+                    </div> --> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+<!--                          <li><span>Pydah College of Engineering</span><br>Master of Technology  (2024-Present)</li> -->
+<!--                             <li><span>Pydah College of Engineering</span><br>Master of Technology  (2024-Present)</li> -->
+                            <li><span>Aditya College of Engineering</span><br>Bachelor of Technology  (2020-2024)</li>
+                            <li><span>Rajiv Gandhi RECS Polytechnic, Kasimkota</span><br>Diploma (2018-2021)</li>
+                            <li><span>Z.P.High School, Seethanagaram</span><br>10th Standard (2017-2018)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------PROJECTS----------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                
+                <div>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>Frontend Projects</h2>
+                    <p>These projects demonstrate my ability to create visually appealing, responsive, and user-friendly web interfaces.</p>
+                    <a href="https://github.com/Tulasi2002/Front-end-mini-projects">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>TODOs Application</h2>
+                    <p>Developed a responsive To-Do application using HTML, CSS, and JavaScript, enabling users to add, edit, and delete tasks. Integrated local storage for persistent data management across sessions</p>
+                    <a href="https://github.com/Tulasi2002/Todo-application">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------PROFILES----------- -->
+    <div id="profiles">
+        <div class="container">
+            <h1 class="sub-title">Profiles</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="data:image/png;base64,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" >
+                    <div class="layer">
+                        <h3>Leetcode</h3>
+                        <p>Profile</p>
+                        <a href="https://leetcode.com/u/21MH5A0411/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dcdorp4tr/image/upload/v1727600600/github_image_logo_vov5ub.png" >
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>Profile</p>
+                        <a href="https://github.com/Tulasi2002"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.codechef.com/users/thulasi_05" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ------------CONTACT------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> tulasikondapalli2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9000270679</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tulasi-kondapalli-9557a4235/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:tulasikondapalli2002@gmail.com"><i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <a href="file:///C:/Users/hp/Desktop/Tulasse%20kondapalli%20resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your Name" required>
+                        <input type="text" name="Email" placeholder="Enter yor Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Tulasi. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxyoF4SqMqIs5tg7qqZ09nCzZGrbBkLDwZxK8Mx2zEppk3DXTAFrqujKmW9z7i8hyWDbA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{ 
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function()
+                {
+                    msg.innerHTML = "";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
